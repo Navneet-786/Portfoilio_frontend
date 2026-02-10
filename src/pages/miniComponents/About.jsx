@@ -9,7 +9,7 @@ const About = () => {
     const getUserProfile = async () => {
       try {
         const { data } = await axios.get(
-          "http://localhost:4000/api/v1/user/portfolio/me",
+          `${process.env.BASE_URL}/api/v1/user/portfolio/me`,
           { withCredentials: true }
         );
         setUser(data);
