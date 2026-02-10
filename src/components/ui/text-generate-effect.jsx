@@ -1,4 +1,3 @@
-"use client";
 import { useEffect } from "react";
 import { motion, useAnimate, useInView } from "framer-motion";
 import { cn } from "@/lib/utils";
@@ -23,7 +22,7 @@ export const TextGenerateEffect = ({
                 },
                 {
                     duration: duration ? duration : 1,
-                    delay: stagger(0.2),
+                    delay: (i) => i * 0.2,
                 }
             );
         }
