@@ -13,7 +13,7 @@ const Timeline = () => {
       setLoading(true);
       try {
         const { data } = await axios.get(
-          `${process.env.BASE_URL}/api/v1/timeline/getall`,
+          `${import.meta.env.VITE_BACKEND_URL}/api/v1/timeline/getall`,
           { withCredentials: true }
         );
         if (data.timelines) {

@@ -12,7 +12,7 @@ const Skills = () => {
     const getMySkills = async () => {
       try {
         const { data } = await axios.get(
-          `${process.env.BASE_URL}/api/v1/skill/getall`,
+          `${import.meta.env.VITE_BACKEND_URL}/api/v1/skill/getall`,
           { withCredentials: true }
         );
         setSkills(data.skills || []);

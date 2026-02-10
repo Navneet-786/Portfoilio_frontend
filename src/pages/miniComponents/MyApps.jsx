@@ -14,7 +14,7 @@ const MyApps = () => {
       try {
         setLoading(true);
         const { data } = await axios.get(
-          `${process.env.BASE_URL}/api/v1/softwareapplication/getall`,
+          `${import.meta.env.VITE_BACKEND_URL}/api/v1/softwareapplication/getall`,
           { withCredentials: true }
         );
         setApps(data.softwareApplications || []);

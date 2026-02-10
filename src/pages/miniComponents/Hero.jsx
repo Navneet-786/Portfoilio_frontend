@@ -18,7 +18,7 @@ const Hero = () => {
     const getUserProfile = async () => {
       try {
         const { data } = await axios.get(
-          `${process.env.BASE_URL}/api/v1/user/portfolio/me`,
+          `${import.meta.env.VITE_BACKEND_URL}/api/v1/user/portfolio/me`,
           { withCredentials: true }
         );
         setUser(data.user);

@@ -20,7 +20,7 @@ const Contact = () => {
     setLoading(true);
     try {
       const { data } = await axios.post(
-        `${import.meta.env.BASE_URL}/api/v1/message/send`,
+        `${import.meta.env.VITE_BACKEND_URL}/api/v1/message/send`,
         { senderName: name, subject, message, senderEmail: email },
         {
           withCredentials: true,

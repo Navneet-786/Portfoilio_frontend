@@ -14,7 +14,7 @@ const ProjectView = () => {
     const getProject = async () => {
       try {
         const res = await axios.get(
-          `${process.env.BASE_URL}/api/v1/project/get/${id}`,
+          `${import.meta.env.VITE_BACKEND_URL}/api/v1/project/get/${id}`,
           { withCredentials: true }
         );
         setProject(res.data.project);
