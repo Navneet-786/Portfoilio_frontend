@@ -16,7 +16,7 @@ const Portfolio = () => {
       setLoading(true);
       try {
         const { data } = await axios.get(
-          "http://localhost:4000/api/v1/project/getall",
+          `${process.env.BASE_URL}/api/v1/project/getall`,
           { withCredentials: true }
         );
         setProjects(data.projects || []);

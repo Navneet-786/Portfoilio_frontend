@@ -13,7 +13,7 @@ const Timeline = () => {
       setLoading(true);
       try {
         const { data } = await axios.get(
-          "https://portfoilio-backend.vercel.app/api/v1/timeline/getall",
+          `${process.env.BASE_URL}/api/v1/timeline/getall`,
           { withCredentials: true }
         );
         if (data.timelines) {
