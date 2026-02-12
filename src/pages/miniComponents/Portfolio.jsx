@@ -48,7 +48,7 @@ const Portfolio = () => {
           md:text-[3rem] lg:text-[3.8rem] leading-[56px] md:leading-[67px] lg:leading-[90px] 
           tracking-[15px] mx-auto w-fit font-extrabold about-h1 "
         >
-          MY <span className="text-white font-extrabold">WORK</span>
+          MY <span className=" font-extrabold">WORK</span>
         </h1>
         {/* <span className="absolute w-full h-1 top-7 sm:top-7 md:top-8 lg:top-11 z-[-1] bg-slate-200"></span> */}
       </div>
